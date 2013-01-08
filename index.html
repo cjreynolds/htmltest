@@ -30,8 +30,11 @@
     options : {
       // All configuration options defined in here
       triggerSelector : '#chatbtn', // Replace with a selector to your help button(s)
-      extras :  {'varName1': 'Grant',
-                      'varName2': 'Asher'},
+      extras : function() { // A static dictionary or a function that returns a dictionary of custom variables 
+        var extras = {'varName1': 'varValue1',
+                      'varName2': 'varValue2'};
+        return extras;
+      }
     }
   };
 
