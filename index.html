@@ -13,6 +13,13 @@
 </head>
 
 <body>
+
+<form name="myform">
+  <input id="name" type="text" name="first-name">
+</input>
+</form>
+
+
   <div id="chatbtn" type="button" style="width:100px; height:20px; background:blue;">Chat now!
   </div>
 <p class="p1">tests</p>
@@ -25,9 +32,6 @@
       triggerSelector : '#chatbtn', // Replace with a selector to your help button(s)
       extras :  {'varName1': 'Grant',
                       'varName2': 'Asher'},
-      onChatDisabled : function(els) { // An event that fires when chat is disabled. It takes one parameter which is an array of your trigger selectors.
-        for(var i = 0; i < els.length; i++) {
-          els[i].style.opacity = .5,
         }
     }
   };
